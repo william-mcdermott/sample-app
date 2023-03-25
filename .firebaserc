@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cli-deploy-664c6": {
+      "hosting": {
+        "sample-app": [
+          "cli-deploy-664c6"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cli-deploy-664c6"
+  }
+}

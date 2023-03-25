@@ -32,7 +32,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/particles.js/particles.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -96,6 +98,16 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "sample-app:build:production",
+            "firebaseProject": "cli-deploy-664c6",
+            "firebaseHostingSite": "cli-deploy-664c6"
           }
         }
       }
